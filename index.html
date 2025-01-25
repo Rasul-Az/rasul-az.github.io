@@ -13,6 +13,33 @@
             background-color: #f4f4f4;
             color: #333;
         }
+        /* Sidebar styles */
+        .sidebar {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #4CAF50;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: #45a049;
+        }
+        /* Content styles */
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
         header {
             background-color: #4CAF50;
             color: white;
@@ -46,79 +73,71 @@
 </head>
 <body>
 
-    <header>
-        <h1>Rasul Azizpour - Curriculum Vitae</h1>
-        <p>Prospective Ph.D. Student in Telecommunications | NDT | Microwave Photonics | Antenna Technology</p>
-    </header>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Professional Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
 
-    <section>
-        <h2>About Me</h2>
-        <p>I am Rasul Azizpour, a Telecommunications graduate with expertise in Non-Destructive Testing (NDT), Microwave Photonics, and Antenna Technology. I am passionate about advancing these fields through cutting-edge Ph.D. research.</p>
-    </section>
+    <!-- Content -->
+    <div class="content">
+        <header>
+            <h1>Rasul Azizpour - Curriculum Vitae</h1>
+            <p>Prospective Ph.D. Student in Telecommunications | NDT | Microwave Photonics | Antenna Technology</p>
+        </header>
 
-    <section>
-        <h2>Personal</h2>
-        <p>I was born in Mazandaran, Iran, in 1995. I have a deep passion for literature and poetry, as well as activities like playing volleyball, hiking, and swimming.</p>
-    </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am Rasul Azizpour, a Telecommunications graduate with expertise in Non-Destructive Testing (NDT), Microwave Photonics, and Antenna Technology. I am passionate about advancing these fields through cutting-edge Ph.D. research.</p>
+        </section>
 
-    <section>
-        <h2>Research Interests</h2>
-        <ul>
-            <li>Microwave Photonics</li>
-            <li>Antenna Technology</li>
-            <li>Non-Destructive Testing (NDT)</li>
-            <li>5G/6G and beyond wireless communications</li>
-            <li>Multiple Input Multiple Output (MIMO) systems</li>
-        </ul>
-    </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>M.Sc. in Electrical Engineering (Telecommunications)</strong> - Amirkabir University of Technology (Tehran, Iran) (2019–2022)</li>
+                <li><strong>B.Sc. in Electrical Engineering</strong> - Babol Noshirvani University of Technology (Babol, Iran) (2015–2019)</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Education</h2>
-        <ul>
-            <li><strong>M.Sc. in Electrical Engineering (Telecommunications)</strong> - Amirkabir University of Technology (Tehran, Iran) (2019–2022)</li>
-            <li><strong>B.Sc. in Electrical Engineering</strong> - Babol Noshirvani University of Technology (Babol, Iran) (2015–2019)</li>
-        </ul>
-    </section>
+        <section id="publications">
+            <h2>Research Publications</h2>
+            <ul>
+                <li><a href="https://ieeexplore.ieee.org/document/[Document_ID]" target="_blank">Beam pattern control for graphene-based patch array antenna - Optics Continuum (2023)</a></li>
+                <li><a href="https://ieeexplore.ieee.org/document/[Document_ID]" target="_blank">Performance Improvement of True Time Delay-Based Centralized Beamforming - Journal of Lightwave Technology (2023)</a></li>
+                <li><a href="https://ieeexplore.ieee.org/document/[Document_ID]" target="_blank">Multi-channel radio-over-fiber communication systems - IEEE Photonics Journal (2024)</a></li>
+                <li><a href="https://ieeexplore.ieee.org/document/[Document_ID]" target="_blank">Low-cost multiband four-port Phased array antenna - IEEE Access (2024)</a></li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Research Publications</h2>
-        <ul>
-            <li><a href="https://ieeexplore.ieee.org/document/[Document_ID]" target="_blank">Beam pattern control for graphene-based patch array antenna - Optics Continuum (2023)</a></li>
-            <li><a href="https://ieeexplore.ieee.org/document/[Document_ID]" target="_blank">Performance Improvement of True Time Delay-Based Centralized Beamforming - Journal of Lightwave Technology (2023)</a></li>
-            <li><a href="https://ieeexplore.ieee.org/document/[Document_ID]" target="_blank">Multi-channel radio-over-fiber communication systems - IEEE Photonics Journal (2024)</a></li>
-            <li><a href="https://ieeexplore.ieee.org/document/[Document_ID]" target="_blank">Low-cost multiband four-port Phased array antenna - IEEE Access (2024)</a></li>
-        </ul>
-    </section>
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <ul>
+                <li><strong>Research Assistant</strong> - Microwave-Photonics, Antenna, and NDT Research (May 2022 – Jan 2024)</li>
+                <li><strong>NDT Laboratory Technician</strong> - Amirkabir University of Technology (Sep 2021–Aug 2022)</li>
+                <li><strong>Laboratory Teaching Assistant</strong> - Physics and Electricity (Jan 2022–Apr 2022)</li>
+                <li><strong>Teaching Assistant</strong> - Differential Equations (Jan 2018–May 2018)</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Manuscripts Under Revision</h2>
-        <ul>
-            <li><a href="https://www.sciencedirect.com/science/article/pii/S0963869524000243" target="_blank">An efficient method for output prediction of eddy current probes - NDT & E International (Under Revision)</a></li>
-        </ul>
-    </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Simulation Software:</strong> CST Studio, COMSOL, OptiSystem, Altair Feko</li>
+                <li><strong>Coding Tools:</strong> Microsoft Office, Matlab, LATEX, Maple</li>
+                <li><strong>Languages:</strong> Mazani (Native), Farsi (Native), English (Professional working proficiency)</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Professional Experience</h2>
-        <ul>
-            <li><strong>Research Assistant</strong> - Microwave-Photonics, Antenna, and NDT Research (May 2022 – Jan 2024)</li>
-            <li><strong>NDT Laboratory Technician</strong> - Amirkabir University of Technology (Sep 2021–Aug 2022)</li>
-            <li><strong>Laboratory Teaching Assistant</strong> - Physics and Electricity (Jan 2022–Apr 2022)</li>
-            <li><strong>Teaching Assistant</strong> - Differential Equations (Jan 2018–May 2018)</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Simulation Software:</strong> CST Studio, COMSOL, OptiSystem, Altair Feko</li>
-            <li><strong>Coding Tools:</strong> Microsoft Office, Matlab, LATEX, Maple</li>
-            <li><strong>Languages:</strong> Mazani (Native), Farsi (Native), English (Professional working proficiency)</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>Contact me: <strong>+98 933 8466488</strong> | <a href="mailto:Ra.Azizpour@aut.ac.ir">Ra.Azizpour@aut.ac.ir</a> | LinkedIn: <a href="[LinkedIn URL]" target="_blank">[Your LinkedIn]</a></p>
-    </footer>
+        <section id="contact">
+            <footer>
+                <p>Contact me: <strong>+98 933 8466488</strong> | <a href="mailto:Ra.Azizpour@aut.ac.ir">Ra.Azizpour@aut.ac.ir</a> | LinkedIn: <a href="[LinkedIn URL]" target="_blank">[Your LinkedIn]</a></p>
+            </footer>
+        </section>
+    </div>
 
 </body>
 </html>
