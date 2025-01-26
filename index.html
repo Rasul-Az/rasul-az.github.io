@@ -1,4 +1,3 @@
-  <div id="last-updated">Last updated: <span id="update-date"></span></div>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
@@ -34,6 +33,17 @@ MathJax.Hub.Config({
 <div id="toptitle">
 <h1>Rasul Azizpour</h1>
 <div id="subtitle">Amirkabir University of Technology (AUT)</div>
+
+<div id="last-updated">Last updated: <span id="update-date"></span></div>
+
+  <script>
+    document.getElementById("update-date").textContent = new Date(document.lastModified).toLocaleDateString("en-GB", {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    });
+  </script>
+  
 </div>
 <table class="imgtable"><tr><td>
 <a href="https://ee.aut.ac.ir/en/"><img src="rasul.jpg" alt="Rasul Azizpour" width="150px" height="150px" /></a>&nbsp;</td>
